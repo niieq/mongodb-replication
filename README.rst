@@ -9,3 +9,14 @@ Usage
 .. code-block:: bash
 	
 	$ vagrant up
+
+
+	# To View Sample Data in slave
+
+	$ vagrant ssh slave
+
+	$ mongo 192.168.33.12
+
+	$ set0:SECONDARY> rs.slaveOk()
+
+	$ db.students.find()

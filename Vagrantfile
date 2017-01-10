@@ -16,11 +16,13 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "slave" do |slave|
     slave.vm.network :private_network, ip: "192.168.33.12"
+    slave.vm.synced_folder ".", "/home/vagrant/"
     slave.vm.provision "shell", path: "slave.sh"
   end
 
   config.vm.define "master" do |master|
     master.vm.network :private_network, ip: "192.168.33.11"
+    master.vm.synced_folder ".", "/home/vagrant/"
     master.vm.provision "shell", path: "master.sh"
   end
 end

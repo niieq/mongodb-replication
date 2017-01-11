@@ -9,6 +9,8 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 apt-get update
 apt-get -y install mongodb-10gen
 
+cp -f /vagrant/backup.sh ./backup.sh
+
 service mongodb stop
 cp -f /vagrant/slavecfg.cnf /etc/mongodb.conf
 service mongodb start

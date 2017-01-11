@@ -30,7 +30,8 @@ rs.add("slave")
 rs.conf()
 EOF
 
-echo "Sample data"
+
+echo "Inserting Sample data"
 mongo 192.168.33.11 <<EOF
 use students
 db.students.insert({name: "stud1"})

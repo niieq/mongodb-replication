@@ -1,7 +1,7 @@
 hostname "slave"
 echo "slave" > /etc/hostname
-echo "192.168.33.12 slave" >> /etc/hosts
 echo "192.168.33.11 master" >> /etc/hosts
+echo "192.168.33.12 slave" >> /etc/hosts
 
 # get mongodb
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10

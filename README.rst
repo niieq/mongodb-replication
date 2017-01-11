@@ -31,4 +31,4 @@ Usage
 	# Execute Backup Script
 	$ ./backup.sh 
 
-	NB: Backups should be done on replicas
+	NB: Backups is done on replicas
